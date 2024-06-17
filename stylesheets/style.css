@@ -479,3 +479,173 @@ header{
         font-size: 10px;
     }
 }
+
+/* Clients */
+#clients{
+    margin-top: 3%;
+    padding: 0% 8%;
+
+    @media(max-width:540px){
+        margin-top: 15%;
+    }
+}
+
+.clients_image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    img{
+        width: 100%;
+
+        @media(max-width:540px){
+            width: 80%;
+        }
+    }
+}
+
+.clients_images{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2%;
+    gap: 5%;
+
+    @media(max-width:540px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Newsletter */
+#newsletter{
+    width: 100%;
+    height: 35vh;
+    background-color: #f2f2f2;
+    padding: 3% 0;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width:540px){
+        margin-top: 10%;
+    }
+}
+
+.newsletter_continer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter_head{
+    text-align: center;
+
+    p{
+        font-weight: bold;
+        font-size: 25px;
+
+        @media(max-width:750px){
+            font-size: 18px;
+        }
+
+        @media(max-width:470px){
+            font-size: 15px;
+        }
+    }
+}
+
+.newsletter_content{
+    width: 600px;
+    text-align: center;
+    margin-top: 2%;
+
+    @media(max-width:880px){
+        width: 400px;
+    }
+
+    @media(max-width:750px){
+        width: 300px;
+    }
+
+    @media(max-width:500px){
+        width: 400px;
+    }
+
+    @media(max-width:480px){
+        width: 350px;
+    }
+
+    @media(max-width:400px){
+        width: 80%;
+    }
+
+    p{
+        @media(max-width:750px){
+            font-size: 15px;
+        }
+
+        @media(max-width:490px){
+            font-size: 14px;
+        }
+
+        @media(max-width:470px){
+            font-size: 12px;
+        }
+    }
+}
+
+.form{
+    margin-top: 2%;
+    padding: 1%;
+    border: 1px solid #c9c7c7;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width:880px){
+        width: 600px;
+    }
+
+    @media(max-width:750px){
+        width: 500px;
+    }
+
+    @media(max-width:600px){
+        width: 400px;
+    }
+
+    @media(max-width:500px){
+        width: 350px;
+    }
+
+    @media(max-width:480px){
+        width: 330px;
+    }
+
+    @media(max-width:400px){
+        width: 80%;
+    }
+}
+
+.email_input{
+    height: 30px;
+    background-color: transparent;
+    outline: transparent;
+}
+
+
+.send_btn{
+    cursor: pointer;
+    background-color: #dadada;
+    width: 100px;
+    padding: 1.3% 0;
+    border-radius: 10px;
+
+    @media(max-width:800px){
+        border-radius: 5px;
+        padding: 2% 0;
+    }
+}
