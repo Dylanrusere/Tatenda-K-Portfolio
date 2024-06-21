@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header class="header">
         <div class="profile_links_container">
-            <div class="header_profile_links">
-                <a href=""><img src="./assets/icons/linkedin.png" alt="" width="25px"></a>
-                <a href=""><img src="./assets/icons/instagram.png" alt="" width="25px"></a>
-                <a href=""><img src="./assets/icons/facebook.png" alt="" width="25px"></a>
-                <a href=""><img src="./assets/icons/twitter.png" alt="" width="25px"></a>
+            <div class="profile_links">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
         <nav class="main_nav">
@@ -25,17 +27,15 @@
                 <li><a href="./about_page.html">About</a></li>
                 <li><a href="./research.html">Research</a></li>
                 <li class="dropdown">
-                    <a href="#">Published Work</a>
+                    <a href="#">Published Work <i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="./children`s_church.html">Children`s Church</a>
-                        <a href="./ladies.html">Ladies` Fellowship</a>
-                        <a href="./men.html">Men`s Fellowship</a>
-                        <a href="./youth.html">Youth Ministry</a>
+                        <a href="#">CL Media</a>
+                        <a href="#">CL Media 1</a>
                     </div>
                 </li>
-                <li><a href="./contact.html">Lifestyle</a></li>
-                <li><a href="./contact.html">Mizfits</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Mizfits</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="offScreenMenu">
@@ -47,10 +47,8 @@
                 <li><a href="#">Ministries</a></li>
                 &nbsp;
                 <ol class="menu_down">
-                    <li><a href="./children`s_church.html">Children`s Church</a></li>
-                    <li><a href="./ladies.html">Ladies` Fellowship</a></li>
-                    <li><a href="./men.html">Men`s Fellowship</a></li>
-                    <li><a href="./youth.html">Youth Ministry</a></li>
+                    <li><a href="#">CL Media</a></li>
+                    <li><a href="#">CL Media 1</a></li>
                 </ol>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -65,8 +63,28 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-
+    <section id="hero_section">
+        <div class="hero">
+            <div class="hero-item active_hero" style="background-image: url('./assets/images/Homepage.png');">
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-item" style="background-image: url('./assets/images/instagram_1.png');">
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-item" style="background-image: url('./assets/images/instagram_2.png');">
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-item" style="background-image: url('./assets/images/Homepage.png');">
+                <div class="overlay"></div>
+            </div>
+            
+            <div class="hero-controls">
+              <button class="active_hero"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
     </section>
 
     <!-- About Tatenda Brief -->
@@ -248,8 +266,17 @@
 
         <div class="copyright">
             <p>COPYRIGHT © 2024 TATENDA KANENGONI</p>
+
+            <div class="profile_links_footer">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
+
+    <script src="./javascript/main.js"></script>
 </body>
 </html>

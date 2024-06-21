@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: "Poppins",  sans-serif;
 }
 
 header{
@@ -14,6 +14,7 @@ header{
     width: 100%;
     height: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.459);
+    position: fixed;
 }
 
 .profile_links_container{
@@ -21,14 +22,34 @@ header{
     justify-content: flex-end;
 }
 
-.header_profile_links{
+.profile_links{
     display: flex;
     padding: 1.3% 0% 0.4% 0;
     width: 130px;
     gap: 7%;
     margin-right: 8%;
     margin-bottom: 1%;
-    border-bottom: 1px dotted black;
+
+    i{
+        font-size: 25px;
+        color: #979797;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+.profile_links{
+
+    i:hover{
+        color: black;
+    }
+}
+
+.logo{
+    h2{
+        color: black;
+        font-family: "Alex Brush", cursive;
+        font-size: 30px;
+    }
 }
 
 .main_nav{
@@ -49,11 +70,27 @@ header{
 }
 
 .main_nav ul a{
+    color: #979797;
+    transition: 0.7s ease-in-out;
+}
+
+.main_nav ul a:hover{
     color: black;
 }
 
 .dropdown-content{
     display: none;
+    transition: 0.7s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3% 10% 5% 5%;
+    margin-top: 3%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 10px 15px rgba(0,0,0);
 }
 
 .offScreenMenu{
@@ -65,10 +102,65 @@ header{
 #hero{
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/Homepage.png);
-    background-position: center;
-    background-size: cover;
 }
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+
+  }
+
+  .hero-item.active_hero {
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+  }
+
+  .hero-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .hero-controls button {
+    width: 20px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #979797;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+  }
+
+  .hero-controls button.active_hero {
+    width: 60px;
+    background-color: black;
+  }
 
 /* About Tatenda Brief */
 #about_tatenda_brief{
@@ -771,7 +863,6 @@ header{
 /* Footer */
 footer{
     width: 100%;
-    height: 40vh;
     background-color: #c9c7c7;
     margin-top: 14%;
 }
@@ -782,9 +873,22 @@ footer{
     gap: 3%;
     padding-top: 3%;
 
+    @media(max-width:490px){
+        flex-direction: column;
+        align-items: center;
+    }
+
     a{
         color: black;
         transition: .7s ease-in-out;
+
+        @media(max-width:490px){
+            margin-top: 2%;
+        }
+
+        @media(max-width:340px){
+            font-size: 12px;
+        }
     }
 }
 
@@ -801,5 +905,53 @@ footer{
 
     p{
         text-align: center;
+
+        @media(max-width:340px){
+            font-size: 12px;
+        }
+    }
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 5%;
+
+    @media(max-width:490px){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: center;
+
+        @media(max-width:340px){
+            font-size: 12px;
+        }
+    }
+}
+
+.profile_links_footer{
+    display: flex;
+    width: 130px;
+    gap: 7%;
+
+    @media(max-width:490px){
+        margin-top: 5%;
+    }
+
+    i{
+        font-size: 25px;
+        color: #979797;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+.profile_links_footer{
+
+    i:hover{
+        color: black;
     }
 }
