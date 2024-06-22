@@ -45,6 +45,17 @@ header{
 }
 
 .logo{
+    position: absolute;
+    margin-left: 8%;
+
+    @media(max-width:580px){
+        margin-top: 4%;
+    }
+
+    @media(max-width:360px){
+        margin-top: 8%;
+    }
+
     h2{
         color: black;
         font-family: "Alex Brush", cursive;
@@ -59,6 +70,10 @@ header{
     gap: 10%;
     align-items: center;
 
+    @media(max-width:870px){
+        gap: 7%;
+    }
+
     @media(max-width:750px){
         display: none;
     }
@@ -72,9 +87,17 @@ header{
 .main_nav ul a{
     color: #979797;
     transition: 0.7s ease-in-out;
+
+    @media(max-width:850px){
+        font-size: 13px;
+    }
 }
 
 .main_nav ul a:hover{
+    color: black;
+}
+
+.main_nav ul .active_nav{
     color: black;
 }
 
@@ -93,8 +116,181 @@ header{
     box-shadow: 0px 10px 15px rgba(0,0,0);
 }
 
+/* Off Screen Menu */
 .offScreenMenu{
+    background-color:  #f2f2f2;
+    height: 100vh;
+    width: 50%;
+    z-index: 20;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+
+    @media(max-width:420px){
+        width: 70%;
+    }
+
+    @media(max-width:300px){
+        width: 100%;
+    }
+}
+.offScreenMenu.active {
+    right: 0;
+}
+
+.offScreenMenu{
+    li{
+        list-style: none;
+        .active_nav{
+            color: black;
+        }
+
+        a{
+            text-decoration: none;
+            color: #979797;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.offScreenMenu li a:hover{
+    color: black;
+}
+
+.menu_down{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+ 
+/* Ham Menu */
+.ham_menu {
+    cursor: pointer;
+    height: 40px;
+    width: 35px;
+    margin-left: 86%;
+    position: absolute;
     display: none;
+
+    @media(max-width:750px){
+        display: flex;
+        z-index: 20;
+    }
+
+    @media(max-width:680px){
+        margin-left: 85%;
+    }
+
+    @media(max-width:630px){
+        margin-left: 84%;
+    }
+
+    @media(max-width:580px){
+        margin-top: 4%;
+    }
+
+    @media(max-width:565px){
+        margin-left: 83%;
+    }
+
+    @media(max-width:490px){
+        margin-left: 82%;
+    }
+
+    @media(max-width:420px){
+        margin-left: 81%;
+    }
+
+    @media(max-width:380px){
+        margin-left: 80%;
+    }
+
+    @media(max-width:360px){
+        margin-top: 8%;
+    }
+
+    @media(max-width:350px){
+        margin-left: 79%;
+    }
+
+    @media(max-width:315px){
+        margin-left: 78%;
+    }
+}
+
+.ham_menu span {
+    height: 3.5px;
+    width: 85%;
+    background-color: #979797;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham_menu:hover span{
+    background-color: black;
+}
+
+.ham_menu:hover span:nth-child(1){
+    width: 60%;
+}
+
+.ham_menu:hover span:nth-child(3){
+    width: 60%;
+}
+
+.ham_menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham_menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham_menu.active span {
+    background-color: black;
+}
+
+.ham_menu.active span:nth-child(1) {
+    top: 7%;
+    width: 30px;
+    left: 88%;
+    position: fixed;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    @media(max-width:580px){
+        top: 8%;
+    }
+}
+
+.ham_menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham_menu.active span:nth-child(3) {
+    top: 7%;
+    left: 88%;
+    width: 30px;
+    position: fixed;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    @media(max-width:580px){
+        top: 8%;
+    }
 }
 
 /* Hero Section */
@@ -108,9 +304,13 @@ header{
     height: 100vh;
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .hero-item {
+.hero_container{
+    margin: 0 8%;
+}
+
+.hero-item {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,48 +319,95 @@ header{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
+    transition: 2s ease-in-out;
+    transform: translateX(-3000px);
+}
 
-  .overlay{
+.overlay{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.26);
       z-index: 0;
+      /* display: none; */
+      transition: 0.3s ease-in-out;
+}
 
-  }
+/* .hero-item:hover .overlay{
+    display: block;
+} */
 
-  .hero-item.active_hero {
+.hero-item.active_hero {
     opacity: 1;
-    transition: 0.7s ease-in-out;
-  }
+    transition: 1s ease-in-out;
+    transform: translateX(0px);
+}
 
-  .hero-controls {
+.hero-controls {
     position: absolute;
     bottom: 20px;
     left: 15%;
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-start;
-  }
 
-  .hero-controls button {
+    @media(max-width:730px){
+        margin-left: 3%;
+    }
+
+    @media(max-width:615px){
+        margin-left: 4%;
+    }
+
+    @media(max-width:515px){
+        margin-left: 5%;
+    }
+
+    @media(max-width:450px){
+        margin-left: 7%;
+    }
+
+    @media(max-width:400px){
+        margin-left: 9%;
+    }
+
+    @media(max-width:350px){
+        margin-left: 11%;
+    }
+
+    @media(max-width:320px){
+        margin-left: 13%;
+    }
+
+    @media(max-width:300px){
+        margin-left: 15%;
+    }
+}
+
+.hero-controls button {
     width: 20px;
     height: 7px;
     border-radius: 20px;
-    background-color: #979797;
+    background-color: #f2f2f2;
     margin: 0 5px;
     cursor: pointer;
     transition: 0.7s ease-in-out;
-  }
+}
 
-  .hero-controls button.active_hero {
+.hero-controls button.active_hero {
     width: 60px;
     background-color: black;
-  }
+
+    @media(max-width:800px){
+        width: 40px;
+    }
+
+    @media(max-width:690px){
+        width: 35px;
+    }
+}
 
 /* About Tatenda Brief */
 #about_tatenda_brief{
@@ -212,6 +459,8 @@ header{
 .brief_about{
 
     p{
+        line-height: 35px;
+
         @media(max-width:740px){
             text-align: center;
             font-size: 15px;
@@ -953,5 +1202,131 @@ footer{
 
     i:hover{
         color: black;
+    }
+}
+
+/* About Tatenda Kanengoni in Detail */
+#about_tatenda_kanengoni{
+    padding: 8% 8% 5% 8%;
+}
+
+.about_tatenda_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+    gap: 2%;
+}
+
+.about_tatenda_images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border_overlay{
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    z-index: 200;
+}
+
+.about_images_container{
+    position: absolute;
+    display: flex;
+    gap: 2%;
+    height: 50vh;
+}
+
+.image_one{
+    height: 100%;
+
+    img{
+        height: 100%;
+    }
+}
+
+.image_two{
+    height: 100%;
+
+    img{
+        height: 100%;
+    }
+}
+
+.details_about_tatenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head_about_tatenda{
+    font-size: 25px;
+
+    @media(max-width:1060px){
+        font-size: 20px;
+    }
+
+    @media(max-width:820px){
+        font-size: 15px;
+    }
+
+    @media(max-width:300px){
+        font-size: 13px;
+    }
+}
+
+.about_details_par{
+    margin-top: 7%;
+    line-height: 35px;
+}
+
+.more_details_about_tatenda{
+    text-align: center;
+    margin-top: 3%;
+
+    p{
+        line-height: 35px;
+    }
+}
+
+/* Research */
+.research_container{
+    margin: 8% 0 5% 8%;
+}
+
+.research_first_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.research_head{
+    font-size: 25px;
+
+    @media(max-width:1060px){
+        font-size: 20px;
+    }
+
+    @media(max-width:820px){
+        font-size: 15px;
+    }
+
+    @media(max-width:300px){
+        font-size: 13px;
+    }
+}
+
+.research_details_par{
+    margin-top: 8%;
+    line-height: 35px;
+}
+
+.research_more_details{
+    margin: 3% 8% 5% 8%;
+    text-align: center;
+
+    p{
+        line-height: 35px;
     }
 }
