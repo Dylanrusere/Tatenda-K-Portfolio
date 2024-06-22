@@ -4,8 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Published Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="profile_links_container">
+            <div class="profile_links">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <a href="./index.html">
+            <div class="logo"><h2>Tatenda K</h2></div>
+        </a>
+        <nav class="main_nav">
+            <div></div>
+            <ul>
+                <li><a href="./about_page.html">About</a></li>
+                <li><a href="./research.html">Research</a></li>
+                <li class="dropdown">
+                    <a href="./published_work.html" class="active_nav">Published Work <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./CL_Media.html">CL Media</a>
+                        <a href="./CL_Media-1.html">CL Media 1</a>
+                    </div>
+                </li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Mizfits</a></li>
+                <li><a href="./conact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="offScreenMenu">
+            <ul>
+                <li><a href="./about_page.html">About</a></li>
+                &nbsp;
+                <li><a href="./research.html">Research</a></li>
+                &nbsp;
+                <li><a href="./published_work.html" class="active_nav">Published Work <i class="fa-solid fa-caret-down"></i></a></li>
+                &nbsp;
+                <ol class="menu_down">
+                    <li><a href="./CL_Media.html">CL Media</a></li>
+                    <li><a href="./CL_Media-1.html">CL Media 1</a></li>
+                </ol>
+                &nbsp;
+                <li><a href="#">Lifestyle</a></li>
+                &nbsp;
+                <li><a href="#">Mizfits</a></li>
+                &nbsp;
+                <li><a href="./conact.html">Contact</a></li>
+            </ul>
+        </div>
+        <nav class="ham_icon">
+            <div class="ham_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero_section">
+        <div class="hero">
+            <div class="hero_container">
+                <div class="hero-item active_hero" style="background-image: url('./assets/images/Homepage.png');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero-item" style="background-image: url('./assets/images/instagram_1.png');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero-item" style="background-image: url('./assets/images/instagram_2.png');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero-item" style="background-image: url('./assets/images/Homepage.png');">
+                    <div class="overlay"></div>
+                </div>
+                
+                <div class="hero-controls">
+                  <button class="active_hero"></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+                        </div>
+            </div>
+    </section>
+
+    <!-- Publications Details -->
+    <section id="publications_details">
+        <div class="publications_details_par">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique totam rem earum quis architecto atque, accusamus veritatis accusantium, voluptate sunt unde voluptatibus doloribus eum tenetur, distinctio ducimus culpa eveniet dolorum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aut ea sint assumenda animi magni officiis accusamus earum praesentium nam qui fuga deleniti obcaecati, itaque cum fugit atque saepe dolorem.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, id velit. Voluptatem dolores, autem, facilis fugiat vel, ullam incidunt laboriosam voluptatum libero eius nisi esse eaque placeat voluptate? Ipsum, esse.
+            </p>
+        </div>
+    </section>
+
+    <!-- Latest Publications -->
+    <section id="latest_explorations">
+        <div class="explorations_container publications">
+            <div class="explorations_head">
+                <p>LATEST PUBLICATIONS</p>
+            </div>
+            <div class="cards_container">
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+                <div class="big_card">
+                    <div class="image_container">
+                        <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
+                    </div>
+                    <div class="card_details">
+                        <p class="card_head_par">Travel | Mbare, the Vibrant Suburb of Harare</p>
+                        <p class="card_head_detail_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram">
+        <div class="instagram_head">
+            <p>FOLLOW ME ON INSTAGRAM</p>
+        </div>
+
+        <div class="instagram_images">
+            <div class="instagram_image_container">
+                <img src="./assets/images/instagram_1.png" alt="">
+            </div>
+            <div class="instagram_image_container">
+                <img src="./assets/images/instagram_2.png" alt="">
+            </div>
+            <div class="instagram_image_container">
+                <img src="./assets/images/instagram_3.png" alt="">
+            </div>
+            <div class="instagram_image_container">
+                <img src="./assets/images/instagram_4.png" alt="">
+            </div>
+        </div>
+
+        <div class="instagram_link">
+            <a href="">TATENDA_KANENGONI</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="nav_links">
+            <a href="./about_page.html">About</a>
+            <a href="./research.html">Research</a>
+            <a href="./published_work.html">Published Work</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Mizfits</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="pics_copyright">
+            <p>all pictures are copyright of <br> <br>TATENDA KANENGONI <br> <br>Fine Art & Documentary photographer</p>
+        </div>
+
+        <div class="copyright">
+            <p>COPYRIGHT © 2024 TATENDA KANENGONI</p>
+
+            <div class="profile_links_footer">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
     
+
+    <script src="./javascript/main.js"></script>
 </body>
 </html>

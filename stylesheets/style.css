@@ -98,6 +98,7 @@ header{
 }
 
 .main_nav ul .active_nav{
+    font-weight: 500;
     color: black;
 }
 
@@ -125,12 +126,12 @@ header{
     max-width: 450px;
     position: fixed;
     top: 0;
+    padding-top: 30%;
     right: -450px;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
-    align-items: center;    
-    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 15px;
     transition: 0.5s ease-in-out;
@@ -266,14 +267,14 @@ header{
 }
 
 .ham_menu.active span:nth-child(1) {
-    top: 7%;
+    top: 6%;
     width: 30px;
     left: 88%;
     position: fixed;
     transform: translate(-50%, -50%) rotate(45deg);
 
     @media(max-width:580px){
-        top: 8%;
+        top: 7%;
     }
 }
 
@@ -282,14 +283,14 @@ header{
 }
 
 .ham_menu.active span:nth-child(3) {
-    top: 7%;
+    top: 6%;
     left: 88%;
     width: 30px;
     position: fixed;
     transform: translate(-50%, -50%) rotate(-45deg);
 
     @media(max-width:580px){
-        top: 8%;
+        top: 7%;
     }
 }
 
@@ -1329,4 +1330,22 @@ footer{
     p{
         line-height: 35px;
     }
+}
+
+.research_cards{
+    border: none;
+}
+
+/* Publications */
+.publications_details_par{
+    margin: 8% 8% 5% 8%;
+    text-align: center;
+
+    p{
+        line-height: 35px;
+    }
+}
+
+.publications{
+    border: none;
 }
