@@ -6,9 +6,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
+    <div class="preloader"></div>
     <!-- Navigation Bar -->
     <header class="header">
         <div class="profile_links_container">
@@ -34,9 +36,9 @@
                         <a href="./CL_Media-1.html">CL Media 1</a>
                     </div>
                 </li>
-                <li><a href="#">Lifestyle</a></li>
+                <li><a href="./lifestyle.html">Lifestyle</a></li>
                 <li><a href="#">Mizfits</a></li>
-                <li><a href="./conact.html">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -53,11 +55,11 @@
                     <li><a href="./CL_Media-1.html">CL Media 1</a></li>
                 </ol>
                 &nbsp;
-                <li><a href="#">Lifestyle</a></li>
+                <li><a href="./lifestyle.html">Lifestyle</a></li>
                 &nbsp;
                 <li><a href="#">Mizfits</a></li>
                 &nbsp;
-                <li><a href="./conact.html">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
         <nav class="ham_icon">
@@ -99,10 +101,10 @@
     <!-- About Tatenda Brief -->
     <section id="about_tatenda_brief">
         <div class="about_tatenda_container">
-            <div class="who_she_is">
+            <div class="who_she_is" data-aos="slide-up" data-aos-duration="2000">
                 <p>FINE ART DOCUMENTARY & <br>STREET PHOTOGRAPHER</p>
             </div>
-            <div class="brief_about">
+            <div class="brief_about" data-aos="slide-up" data-aos-duration="2500">
                 <p>I am a Fine Art Documentary and Street Photographer who provides professional services 
                     for People and Companies who aim to represent their image in an original and artistic way. I 
                     hope you will enjoy your time here and find what you were looking for.</p>
@@ -113,11 +115,11 @@
     <!-- Latest Explorations -->
     <section id="latest_explorations">
         <div class="explorations_container">
-            <div class="explorations_head">
+            <div class="explorations_head" data-aos="slide-up" data-aos-duration="2000">
                 <p>LATEST EXPLORATIONS</p>
             </div>
             <div class="cards_container">
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="2000">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -128,7 +130,7 @@
                             enim ad minim veniam, quis</p>
                     </div>
                 </div>
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="2500">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -139,7 +141,7 @@
                             enim ad minim veniam, quis</p>
                     </div>
                 </div>
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="3000">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -150,7 +152,7 @@
                             enim ad minim veniam, quis</p>
                     </div>
                 </div>
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="2000">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -161,7 +163,7 @@
                             enim ad minim veniam, quis</p>
                     </div>
                 </div>
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="2500">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -172,7 +174,7 @@
                             enim ad minim veniam, quis</p>
                     </div>
                 </div>
-                <div class="big_card">
+                <div class="big_card" data-aos="slide-up" data-aos-duration="3000">
                     <div class="image_container">
                         <img class="card_image" src="./assets/images/card.png" alt="Travel Photo in Mbare">
                     </div>
@@ -189,27 +191,27 @@
 
     <!-- Clients -->
     <section id="clients">
-        <div class="clients_head">
+        <div class="clients_head" data-aos="slide-up" data-aos-duration="2000">
             <p>CLIENTS</p>
         </div>
 
         <div class="clients_images">
-            <div class="clients_image_container">
+            <div class="clients_image_container" data-aos="slide-up" data-aos-duration="1000">
                 <img src="./assets/images/caligraph.png" alt="Caligraph">
             </div>
-            <div class="clients_image_container">
+            <div class="clients_image_container"data-aos="slide-up" data-aos-duration="2000">
                 <img src="./assets/images/econet.png" alt="Econet Wireless">
             </div>
-            <div class="clients_image_container">
+            <div class="clients_image_container" data-aos="slide-up" data-aos-duration="3000">
                 <img src="./assets/images/probrands.png" alt="ProBrands">
             </div>
-            <div class="clients_image_container">
+            <div class="clients_image_container" data-aos="slide-up" data-aos-duration="3000">
                 <img src="./assets/images/dukux.png" alt="Dulux">
             </div>
-            <div class="clients_image_container">
+            <div class="clients_image_container" data-aos="slide-up" data-aos-duration="2000">
                 <img src="./assets/images/unicef.png" alt="UNICEF">
             </div>
-            <div class="clients_image_container">
+            <div class="clients_image_container" data-aos="slide-up" data-aos-duration="1000">
                 <img src="./assets/images/british_embassy.png" alt="British Embassy">
             </div>
         </div>
@@ -218,14 +220,14 @@
     <!-- Newsletter -->
     <section id="newsletter">
         <div class="newsletter_continer">
-            <div class="newsletter_head">
+            <div class="newsletter_head" data-aos="slide-up" data-aos-duration="1000">
                 <p>SUBSCRIBE TO MY NEWSLETTER</p>
             </div>
-            <div class="newsletter_content">
+            <div class="newsletter_content" data-aos="slide-up" data-aos-duration="2000">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.at.</p>
             </div>
-            <div class="form">
+            <div class="form" data-aos="slide-up" data-aos-duration="3000">
                 <input type="email" class="email_input" required placeholder="Enter Email Address..."> 
                 <button type="submit" class="send_btn">Send</button>
             </div>
@@ -234,42 +236,42 @@
 
     <!-- Instagram -->
     <section id="instagram">
-        <div class="instagram_head">
+        <div class="instagram_head" data-aos="slide-up" data-aos-duration="2000">
             <p>FOLLOW ME ON INSTAGRAM</p>
         </div>
 
         <div class="instagram_images">
-            <div class="instagram_image_container">
+            <div class="instagram_image_container" data-aos="slide-up" data-aos-duration="1500">
                 <img src="./assets/images/instagram_1.png" alt="">
             </div>
-            <div class="instagram_image_container">
+            <div class="instagram_image_container" data-aos="slide-up" data-aos-duration="2000">
                 <img src="./assets/images/instagram_2.png" alt="">
             </div>
-            <div class="instagram_image_container">
+            <div class="instagram_image_container" data-aos="slide-up" data-aos-duration="2500">
                 <img src="./assets/images/instagram_3.png" alt="">
             </div>
-            <div class="instagram_image_container">
+            <div class="instagram_image_container" data-aos="slide-up" data-aos-duration="1000">
                 <img src="./assets/images/instagram_4.png" alt="">
             </div>
         </div>
 
-        <div class="instagram_link">
+        <div class="instagram_link" >
             <a href="">TATENDA_KANENGONI</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="nav_links">
+        <div class="nav_links" data-aos="slide-up" data-aos-duration="1000">
             <a href="./about_page.html">About</a>
             <a href="./research.html">Research</a>
             <a href="./published_work.html">Published Work</a>
-            <a href="#">Lifestyle</a>
+            <a href="./lifestyle.html">Lifestyle</a>
             <a href="#">Mizfits</a>
-            <a href="#">Contact</a>
+            <a href="./contact.html">Contact</a>
         </div>
 
-        <div class="pics_copyright">
+        <div class="pics_copyright" data-aos="slide-up" data-aos-duration="2000">
             <p>all pictures are copyright of <br> <br>TATENDA KANENGONI <br> <br>Fine Art & Documentary photographer</p>
         </div>
 
@@ -286,6 +288,11 @@
     </footer>
 
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./javascript/main.js"></script>
 </body>
 </html>
