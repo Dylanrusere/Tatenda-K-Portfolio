@@ -7,6 +7,17 @@ hamMenu.addEventListener("click", () => {
     offMenu.classList.toggle("active");
 });
 
+// Pre-Loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".preloader");
+
+  loader.classList.add("preloader_hidden");
+
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader");
+  })
+});
+
 // Hero Section Carousel
 const heroItems = document.querySelectorAll('.hero-item');
 const heroControls = document.querySelectorAll('.hero-controls button');

@@ -5,11 +5,11 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: "Poppins",  sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Pre-Loader */
-/* .preloader{
+.preloader{
     position: fixed;
     top: 0;
     left: 0;
@@ -20,6 +20,7 @@
     align-items: center;
     background-color: #ffffff;
     transition: opacity 5s, visibility 0.75s;
+    z-index: 2000;
 }
 
 .preloader_hidden{
@@ -44,13 +45,13 @@
     to{
         transform: rotate(1turn);
     }
-} */
+}
 
 header{
     z-index: 1000;
     background-color: white;
     width: 100%;
-    height: 130px;
+    height: 20vh;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.459);
     position: fixed;
 }
@@ -452,6 +453,7 @@ header{
 #about_tatenda_brief{
     padding: 8% 8% 5% 8%;
 }
+
 
 .about_tatenda_container{
     display: grid;
@@ -1174,6 +1176,10 @@ footer{
             margin-top: 2%;
         }
 
+        @media(max-width:517px){
+            font-size: 15px;
+        }
+
         @media(max-width:340px){
             font-size: 12px;
         }
@@ -1245,8 +1251,13 @@ footer{
 }
 
 /* About Tatenda Kanengoni in Detail */
-#about_tatenda_kanengoni{
-    padding: 8% 8% 5% 8%;
+.about_big_container{
+    margin: 8% 8% 5% 8%;
+
+
+    @media(max-width:1550px){
+        margin-top: 2%;
+    }
 }
 
 .about_tatenda_grid_container{
@@ -1254,12 +1265,33 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     height: 50vh;
     gap: 2%;
+
+    @media(max-width:940px){
+        grid-template-columns: 1fr;
+        margin-bottom: 4%;
+    }
 }
 
 .about_tatenda_images{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media(max-width:940px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:600px){
+        margin-top: 15%;
+    }
+
+    @media(max-width:450px){
+        margin-top: 20%;
+    }
+
+    @media(max-width:325px){
+        margin-top: 25%;
+    }
 }
 
 .border_overlay{
@@ -1268,17 +1300,85 @@ footer{
     width: 100%;
     height: 40vh;
     z-index: 200;
+
+    @media(max-width:1980px){
+        height: 35vh;
+    }
+
+    @media(max-width:1590px){
+        height: 30vh;
+    }
+
+    @media(max-width:1260px){
+        height: 25vh;
+    }
+
+    @media(max-width:940px){
+        width: 60%;
+        height: 30vh;
+    }
+
+    @media(max-width:800px){
+        width: 70%;
+    }
+
+    @media(max-width:650px){
+        width: 80%;
+    }
+
+    @media(max-width:560px){
+        width: 90%;
+    }
+
+    @media(max-width:480px){
+        width: 60%;
+    }
+
+    @media(max-width:420px){
+        width: 70%;
+    }
+
+    @media(max-width:360px){
+        width: 80%;
+    }
+
+    @media(max-width:310px){
+        width: 90%;
+    }
 }
 
 .about_images_container{
     position: absolute;
     display: flex;
     gap: 2%;
-    height: 50vh;
 }
 
 .image_one{
-    height: 100%;
+    height: 550px;
+
+    @media(max-width:1980px){
+        height: 500px;
+    }
+
+    @media(max-width:1840px){
+        height: 450px;
+    }
+
+    @media(max-width:1590px){
+        height: 400px;
+    }
+
+    @media(max-width:1450px){
+        height: 350px;
+    }
+
+    @media(max-width:1260px){
+        height: 300px;
+    }
+
+    @media(max-width:1060px){
+        height: 250px;
+    }
 
     img{
         height: 100%;
@@ -1286,7 +1386,35 @@ footer{
 }
 
 .image_two{
-    height: 100%;
+    height: 550px;
+
+    @media(max-width:1980px){
+        height: 500px;
+    }
+
+    @media(max-width:1840px){
+        height: 450px;
+    }
+
+    @media(max-width:1590px){
+        height: 400px;
+    }
+
+    @media(max-width:1450px){
+        height: 350px;
+    }
+
+    @media(max-width:1260px){
+        height: 300px;
+    }
+
+    @media(max-width:1060px){
+        height: 250px;
+    }
+
+    @media(max-width:480px){
+        display: none;
+    }
 
     img{
         height: 100%;
@@ -1297,6 +1425,27 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+
+    @media(max-width:940px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:650px){
+        margin-top: 15%;
+    }
+
+    @media(max-width:480px){
+        margin-top: 20%;
+    }
+
+    @media(max-width:375px){
+        margin-top: 25%;
+    }
+
+    @media(max-width:300px){
+        margin-top: 30%;
+    }
 }
 
 .head_about_tatenda{
@@ -1310,8 +1459,8 @@ footer{
         font-size: 15px;
     }
 
-    @media(max-width:300px){
-        font-size: 13px;
+    @media(max-width:440px){
+        text-align: center;
     }
 }
 
@@ -1324,20 +1473,141 @@ footer{
     text-align: center;
     margin-top: 3%;
 
+    @media(max-width:1046px){
+        margin-top: 5%;
+    }
+
+    @media(max-width:940px){
+        margin-top: 40%;
+    }
+
+    @media(max-width:870px){
+        margin-top: 45%;
+    }
+
+    @media(max-width:760px){
+        margin-top: 50%;
+    }
+
+    @media(max-width:660px){
+        margin-top: 55%;
+    }
+
+    @media(max-width:630px){
+        margin-top: 60%;
+    }
+
+    @media(max-width:602px){
+        margin-top: 65%;
+    }
+
+    @media(max-width:590px){
+        margin-top: 70%;
+    }
+
+    @media(max-width:515px){
+        margin-top: 80%;
+    }
+
+    @media(max-width:485px){
+        margin-top: 90%;
+    }
+
+    @media(max-width:455px){
+        margin-top: 95%;
+    }
+
+    @media(max-width:435px){
+        margin-top: 100%;
+    }
+
+    @media(max-width:425px){
+        margin-top: 110%;
+    }
+
+    @media(max-width:395px){
+        margin-top: 120%;
+    }
+
+    @media(max-width:370px){
+        margin-top: 130%;
+    }
+
+    @media(max-width:360px){
+        margin-top: 140%;
+    }
+
+    @media(max-width:330px){
+        margin-top: 160%;
+    }
+
+    @media(max-width:315px){
+        margin-top: 170%;
+    }
+
+    @media(max-width:300px){
+        margin-top: 180%;
+    }
+
+    @media(max-width:290px){
+        margin-top: 190%;
+    }
+
     p{
         line-height: 35px;
+    }
+}
+
+.about_images_container_images{
+    margin: 0 8% 5% 8%;
+}
+
+.about_images_grid_container_images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+
+    @media(max-width:750px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:355px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.images_images{
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.image_3 ,.image_4{
+    
+    @media(max-width:355px){
+        display: none;
     }
 }
 
 /* Research */
 .research_container{
     margin: 8% 0 5% 8%;
+
+    @media(max-width:550px){
+        margin: 8% 8% 5% 8%;
+    }
 }
 
 .research_first_grid_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2%;
+
+    @media(max-width:550px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .research_head{
