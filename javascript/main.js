@@ -46,3 +46,11 @@ let currentIndex = 0;
     });
 
     setInterval(autoRotateHero, 5000);
+
+    // heroItems.addEventListener('mouseover', () => {
+    //   pause();
+    // });
+    
+    // heroItems.addEventListener('mouseout', () => {
+    //   cycle();
+    // });

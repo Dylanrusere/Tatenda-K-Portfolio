@@ -561,6 +561,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 20%;
+    transition: 7s ease-in-out;
 
     @media(max-width:1320px){
         width: 320px;
@@ -690,6 +691,11 @@ header{
         width: 230px;
     }
 }
+
+/* .big_card:hover{
+    background-color: #979797;
+    border: 1.5px solid #979797;
+} */
 
 
 .image_container{
